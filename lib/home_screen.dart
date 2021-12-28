@@ -94,23 +94,28 @@ class _HomeScreenState extends State<HomeScreen> {
                             ],
                           ),
                         ),
-                        Card(
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8)),
-                          elevation: 10,
-                          child: Column(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Padding(padding: EdgeInsets.only(top: 5)),
-                              SvgPicture.network(
-                                'https://www.svgrepo.com/download/229737/notebook-bookmark.svg',
-                                height: 128,
-                              ),
-                              Text(
-                                "Books",
-                                style: cardTextStyle,
-                              )
-                            ],
+                        GestureDetector(
+                          onTap: () {
+                            print('Tapped');
+                          },
+                          child: Card(
+                            shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8)),
+                            elevation: 10,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Padding(padding: EdgeInsets.only(top: 5)),
+                                SvgPicture.network(
+                                  'https://www.svgrepo.com/download/229737/notebook-bookmark.svg',
+                                  height: 128,
+                                ),
+                                Text(
+                                  "Books",
+                                  style: cardTextStyle,
+                                )
+                              ],
+                            ),
                           ),
                         ),
                         Card(
